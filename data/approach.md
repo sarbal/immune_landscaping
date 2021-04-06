@@ -1,9 +1,13 @@
 # Methods 
 
-## Sex DE 
+
+## Data processing 
 ```{}
 ```
 
+## Sex DE 
+```{}
+```
 
 ## Age DE 
 ```{}
