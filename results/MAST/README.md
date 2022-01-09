@@ -1,9 +1,9 @@
 # MAST code/pseudocode
 
 First extracted data from larger Seurat object. Example code below. 
-For "raw" analyses - used OBJ@assays$RNA@counts, for normalised analyses, used OBJ@assays$SCT@counts
-Note, generated these prior to running MAST and stored as the large Seurat object took up lots of memory and failed to run on cluster
-This data is not shared (large, private)
+- For "raw" analyses - used OBJ@assays$RNA@counts, for normalised analyses, used OBJ@assays$SCT@counts
+- Note, generated these prior to running MAST and stored as the large Seurat object took up lots of memory and failed to run on cluster
+- This data is not shared (large, private)
 
 ```
 f1 = obj@meta.data[[opt$cell_level]] == celltypei & !is.na(obj@meta.data[[opt$cell_level]])
