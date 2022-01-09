@@ -29,7 +29,8 @@ save(sca , file=paste0(celltypei, "_scaraw.Rdata") )
 ```
 
 ## MAST analysis
-Note, sample code below was run in script where celltypei was specified and other variables pre-loaded 
+Note, sample code below was run in script where celltypei was specified and other variables pre-loaded.
+- Shared the "fcHurdle" files in folders. 
 
 ## Step 1 - load data 
     load(file=paste0(celltypei, "_scaraw.Rdata") ) 
