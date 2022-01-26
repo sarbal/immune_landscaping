@@ -114,7 +114,7 @@ Note, sample code below was run in script where celltypei was specified and othe
     random_effects <- unique(covs.df[covs.df$type%in%c('random','batch'),]$covariate)
 
 
-   # counts_freq = counts_freq[counts_freq>0]
+    # counts_freq = counts_freq[counts_freq>0]
     contrast = contrast.vars[1]
     freq_expressed <- 0.1
     print(paste0('Setting a minimum gene expression threshold based on genes that are found in at least ', freq_expressed, ' of the cells (proportion of non-zero cells)'))
