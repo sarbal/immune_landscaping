@@ -141,7 +141,7 @@ Note, sample code below was run in script where celltypei was specified and othe
         load(zlmfile)
     }
 
-## Step 6 - age contrast 
+## Step 6 - sex contrast 
     summaryfile=paste0("summaryDT_batch_age_",opt[['cell_type']] ,flag,".rds")
     if( !file.exists ( summaryfile   ) )  {  
         summaryCond <- summary(zlmCond, doLRT=contrast, fitArgsD=list(nAGQ=0))
@@ -156,7 +156,7 @@ Note, sample code below was run in script where celltypei was specified and othe
         save(fcHurdle_sex, file="fcHurdle_sex",opt[['cell_type']] ,flag,".Rdata") 
     } 
 
-## Step 7 - sex contrast 
+## Step 7 - age contrast 
     summaryfile=paste0("summaryDT_batch_sex_",opt[['cell_type']] ,flag,".rds")
     if( !file.exists ( summaryfile   ) )  {  
         summaryCond <- summary(zlmCond, doLRT="sex", fitArgsD=list(nAGQ=0))
