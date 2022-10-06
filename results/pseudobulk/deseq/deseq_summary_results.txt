@@ -1,0 +1,40 @@
+"sex+age_scaled" "reduced-sex" "contrast-sex"
+"ASDC_l2" 0 0 1
+"B intermediate_l2" 8 8 8
+"B memory_l2" 21 21 21
+"B naive_l2" 7 7 7
+"B_l1" 29 29 29
+"CD14 Mono_l2" 4 4 4
+"CD16 Mono_l2" 4 4 4
+"CD4 CTL_l2" 17 17 17
+"CD4 Naive_l2" 39 39 39
+"CD4 Proliferating_l2" 0 0 0
+"CD4 T_l1" 58 58 58
+"CD4 TCM_l2" 33 33 33
+"CD4 TEM_l2" 3 3 3
+"CD8 Naive_l2" 528 528 528
+"CD8 Proliferating_l2" 0 0 0
+"CD8 T_l1" 159 159 159
+"CD8 TCM_l2" 1 1 1
+"CD8 TEM_l2" 127 127 127
+"cDC1_l2" 0 0 0
+"cDC2_l2" 5 5 5
+"DC_l1" 3 3 3
+"DC_l2" 4 4 4
+"dnT_l2" 1 1 1
+"Eryth_l2" 3 3 3
+"gdT_l2" 9 9 9
+"HSPC_l2" 1 1 1
+"ILC_l2" 0 0 0
+"MAIT_l2" 213 213 213
+"Mono_l1" 5 5 5
+"NK cell_l2" 492 492 492
+"NK Proliferating_l2" 6 6 6
+"NK_CD56bright_l2" 2 2 2
+"NK_l1" 493 493 493
+"other T_l1" 121 121 121
+"other_l1" 3 3 3
+"pDC_l2" 1 1 1
+"Plasmablast_l2" 1 1 1
+"Platelet_l2" 5 5 5
+"Treg_l2" 6 6 6

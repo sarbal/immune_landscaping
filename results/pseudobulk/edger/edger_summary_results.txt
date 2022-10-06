@@ -1,0 +1,40 @@
+"sex" "age" "pool" "sex+age+pool_trend" "sex+age+pool" "sex+age-pool" "sex+age+-pool_trend"
+"ASDC_l2" 1 0 0 1 1 1 1
+"B intermediate_l2" 8 0 7 8 8 8 8
+"B memory_l2" 7 1 4 7 7 7 7
+"B naive_l2" 10 1 6 10 10 10 10
+"B_l1" 20 12 18 20 20 20 20
+"CD14 Mono_l2" 6 0 2 6 6 6 6
+"CD16 Mono_l2" 5 0 3 5 5 5 5
+"CD4 CTL_l2" 4 0 3 4 4 4 4
+"CD4 Naive_l2" 16 5 12 16 16 16 16
+"CD4 Proliferating_l2" 2 0 0 2 2 2 2
+"CD4 T_l1" 16 2 11 16 16 16 16
+"CD4 TCM_l2" 17 6 14 17 17 16 16
+"CD4 TEM_l2" 7 0 7 7 7 7 7
+"CD8 Naive_l2" 10 5 3 10 10 10 10
+"CD8 Proliferating_l2" 1 0 0 1 1 1 1
+"CD8 T_l1" 15 4 12 15 15 15 15
+"CD8 TCM_l2" 5 0 3 5 5 5 5
+"CD8 TEM_l2" 11 1 8 11 11 11 11
+"cDC1_l2" 0 0 0 0 0 0 0
+"cDC2_l2" 2 0 0 2 2 2 2
+"DC_l1" 4 0 1 4 4 4 4
+"DC_l2" 4 0 1 4 4 4 4
+"dnT_l2" 2 0 0 2 2 2 2
+"Eryth_l2" 1 0 0 1 1 1 1
+"gdT_l2" 2 0 1 2 2 2 2
+"HSPC_l2" 2 0 0 2 2 2 2
+"ILC_l2" 1 0 0 1 1 1 1
+"MAIT_l2" 5 3 1 5 5 5 5
+"Mono_l1" 7 0 4 7 7 7 7
+"NK Proliferating_l2" 3 1 0 3 3 3 3
+"NK_CD56bright_l2" 4 0 4 4 4 4 4
+"NK_l1" 12 2 8 12 12 12 12
+"NK_l2" 12 3 9 11 11 12 12
+"other T_l1" 7 3 3 7 7 7 7
+"other_l1" 2 0 0 2 2 2 2
+"pDC_l2" 2 0 0 2 2 2 2
+"Plasmablast_l2" 4 0 0 4 4 4 4
+"Platelet_l2" 2 0 1 2 2 2 2
+"Treg_l2" 7 0 6 7 7 7 7
