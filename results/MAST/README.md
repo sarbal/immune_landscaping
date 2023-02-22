@@ -164,8 +164,8 @@ Note, sample code below was run in script where celltypei was specified and othe
         saveRDS(summaryDt, file=summaryfile) 
 
         summaryDt_age <- summaryDt
-        fcHurdle = summaryDt_f[ summaryDt_age$contrast == "age" & summaryDt_f$component=='H', c(1,4)]
-        fcHurdle2 = summaryDt_f[ summaryDt_age$contrast == "age" & summaryDt_f$component=='logFC', c(1,7,5,6)]
+        fcHurdle = summaryDt_age[ summaryDt_age$contrast == "age" & summaryDt_f$component=='H', c(1,4)]
+        fcHurdle2 = summaryDt_age[ summaryDt_age$contrast == "age" & summaryDt_f$component=='logFC', c(1,7,5,6)]
         fcHurdle_age = cbind(fcHurdle, fcHurdle2, p.adjust(fcHurdle[,2]) )
         colnames(fcHurdle_age)[7] = "fdr"
         save(fcHurdle_age, file=paste0("fcHurdle_age",opt[['cell_type']] ,flag,".Rdata") )
