@@ -142,33 +142,33 @@ Note, sample code below was run in script where celltypei was specified and othe
     }
 
 ## Step 6 - sex contrast 
-    summaryfile=paste0("summaryDT_batch_age_",opt[['cell_type']] ,flag,".rds")
+    summaryfile=paste0("summaryDT_batch_sex_",opt[['cell_type']] ,flag,".rds")
     if( !file.exists ( summaryfile   ) )  {  
         summaryCond <- summary(zlmCond, doLRT=contrast, fitArgsD=list(nAGQ=0))
         summaryDt <- summaryCond$datatable
         saveRDS(summaryDt, file=summaryfile) 
 
-        contrast <- 'sex'
-        fcHurdle = summaryDt_sex[ summaryDt_sex$contrast == contrast & summaryDt_sex$component=='H', c(1,4)]
-        fcHurdle2 = summaryDt_sex[ summaryDt_sex$contrast == contrast & summaryDt_sex$component=='logFC', c(7,5,6)]
+        summaryDt_sex <- summaryDt
+        fcHurdle = summaryDt_sex[ summaryDt_sex$contrast == "sex" & summaryDt_sex$component=='H', c(1,4)]
+        fcHurdle2 = summaryDt_sex[ summaryDt_sex$contrast == "sex" & summaryDt_sex$component=='logFC', c(1,7,5,6)]
         fcHurdle_sex = cbind(fcHurdle, fcHurdle2, p.adjust(fcHurdle[,2]) )
-        colnames(fcHurdle_sex)[6] = "fdr"
-        save(fcHurdle_sex, file="fcHurdle_sex",opt[['cell_type']] ,flag,".Rdata") 
+        colnames(fcHurdle_sex)[7] = "fdr"
+        save(fcHurdle_sex, file=paste0("fcHurdle_sex",opt[['cell_type']] ,flag,".Rdata") )
     } 
 
 ## Step 7 - age contrast 
-    summaryfile=paste0("summaryDT_batch_sex_",opt[['cell_type']] ,flag,".rds")
+    summaryfile=paste0("summaryDT_batch_age_",opt[['cell_type']] ,flag,".rds")
     if( !file.exists ( summaryfile   ) )  {  
         summaryCond <- summary(zlmCond, doLRT="sex", fitArgsD=list(nAGQ=0))
         summaryDt <- summaryCond$datatable
         saveRDS(summaryDt, file=summaryfile) 
 
-        contrast <- 'age'
-        fcHurdle = summaryDt_f[ summaryDt_f$contrast == contrast & summaryDt_f$component=='H', c(1,4)]
-        fcHurdle2 = summaryDt_f[ summaryDt_f$contrast == contrast & summaryDt_f$component=='logFC', c(7,5,6)]
+        summaryDt_age <- summaryDt
+        fcHurdle = summaryDt_f[ summaryDt_age$contrast == "age" & summaryDt_f$component=='H', c(1,4)]
+        fcHurdle2 = summaryDt_f[ summaryDt_age$contrast == "age" & summaryDt_f$component=='logFC', c(1,7,5,6)]
         fcHurdle_age = cbind(fcHurdle, fcHurdle2, p.adjust(fcHurdle[,2]) )
-        colnames(fcHurdle_age)[6] = "fdr"
-        save(fcHurdle_age, file="fcHurdle_age",opt[['cell_type']] ,flag,".Rdata") 
+        colnames(fcHurdle_age)[7] = "fdr"
+        save(fcHurdle_age, file=paste0("fcHurdle_age",opt[['cell_type']] ,flag,".Rdata") )
 
     } 
 
